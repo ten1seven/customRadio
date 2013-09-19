@@ -1,4 +1,4 @@
-/*! jquery.customRadio.js v 0.10 | Author: Jeremy Fields [jeremy.fields@viget.com], 2013 | License: MIT */
+/*! jquery.customRadio.js v 0.80 | Author: Jeremy Fields [jeremy.fields@viget.com], 2013 | License: MIT */
 
 (function($) {
 
