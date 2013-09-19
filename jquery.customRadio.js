@@ -48,7 +48,7 @@
 		// variables
 		base.vars = function() {
 			base.$el.off('focus.replace blur.replace click.replace');
-			base.$parent = base.$el.closest('label').addClass(base.options.init);
+			base.$parent = base.$el.closest('label').addClass(base.options.init).append(base.options.markup);;
 			base.$siblings = $('input[name="' + base.$el.attr('name') + '"]').not(base.$el);
 		};
 
@@ -59,7 +59,8 @@
 	$.customRadio.defaultOptions = {
 		init: "control-replace-js",
 		checked: "control-checked",
-		focused: "control-focused"
+		focused: "control-focused",
+		markup: ""
 	};
 
 	$.fn.customRadio = function(options) {
