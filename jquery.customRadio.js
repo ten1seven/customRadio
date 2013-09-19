@@ -26,13 +26,13 @@
 			}
 
 			base.$el.on({
-				focus: function() {
+				'focus.replace': function() {
 					base.$parent.addClass(base.options.focused);
 				},
-				blur: function() {
+				'blur.replace': function() {
 					base.$parent.removeClass(base.options.focused);
 				},
-				click: function() {
+				'click.replace': function() {
 					if (base.$el.is(':checked')) {
 						if (base.$el.attr('type') === 'radio') {
 							base.$siblings.closest('label').removeClass(base.options.checked);
